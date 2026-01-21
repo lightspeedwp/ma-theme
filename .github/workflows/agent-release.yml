@@ -1,0 +1,31 @@
+name: Release Agent
+
+# This workflow validates releases for GENERATED THEMES only
+# For scaffold releases, use: .github/workflows/release-scaffold.yml
+
+on:
+    push:
+        branches:
+            - 'release/**'
+    workflow_dispatch:
+
+jobs:
+    release-validate:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Verify this is a generated theme
+              run: |
+                  if [ -f ".github/agents/release-scaffold.agent.md" ] || [ -f "scripts/generate-theme.js" ]; then
+                    echo "❌ ERROR: This workflow is for generated themes only!"
+                    echo "For scaffold releases, use: .github/workflows/release-scaffold.yml"
+                    exit 1
+                  fi
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: '20'
+                  cache: npm
+            - run: npm ci
+            - run: npm run release:validate
