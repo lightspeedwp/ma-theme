@@ -83,6 +83,8 @@ add_action( 'wp_enqueue_scripts', 'ma_theme_enqueue_assets' );
  * Enqueue editor assets.
  */
 function ma_theme_enqueue_editor_assets() {
+	wp_enqueue_style( 'wp-block-editor' );
+
 	$editor_asset_file = get_theme_file_path( 'build/css/editor-style.asset.php' );
 	if ( file_exists( $editor_asset_file ) ) {
 		$editor_asset = include $editor_asset_file;
