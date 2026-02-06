@@ -9,14 +9,6 @@
 /* Custom theme styles */
 :root {
 
-	/* Custom properties for theme colors */
-	--theme-primary: var(--wp--preset--color--information-foreground);
-	--theme-secondary: var(--wp--preset--color--contrast);
-	--theme-background: var(--wp--preset--color--error-background);
-	--theme-foreground: var(--wp--preset--color--error-foreground);
-	--theme-accent: var(--wp--preset--color--accent-900);
-	--theme-neutral: var(--wp--preset--color--neutral-900);
-
 	/* Custom properties for spacing */
 	--theme-spacing-xs: var(--wp--preset--spacing--10);
 	--theme-spacing-sm: var(--wp--preset--spacing--20);

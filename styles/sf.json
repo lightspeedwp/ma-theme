@@ -7,6 +7,51 @@
 		"color": {
 			"palette": [
 				{
+					"color": "#F9F9FA",
+					"name": "Neutral 100",
+					"slug": "neutral-100"
+				},
+				{
+					"color": "#E3E3EA",
+					"name": "Neutral 200",
+					"slug": "neutral-200"
+				},
+				{
+					"color": "#CCCCD5",
+					"name": "Neutral 300",
+					"slug": "neutral-300"
+				},
+				{
+					"color": "#B7B7BE",
+					"name": "Neutral 400",
+					"slug": "neutral-400"
+				},
+				{
+					"color": "#A4A4A5",
+					"name": "Neutral 500",
+					"slug": "neutral-500"
+				},
+				{
+					"color": "#878788",
+					"name": "Neutral 600",
+					"slug": "neutral-600"
+				},
+				{
+					"color": "#6B6B6C",
+					"name": "Neutral 700",
+					"slug": "neutral-700"
+				},
+				{
+					"color": "#4F4F4F",
+					"name": "Neutral 800",
+					"slug": "neutral-800"
+				},
+				{
+					"color": "#323232",
+					"name": "Neutral 900",
+					"slug": "neutral-900"
+				},
+				{
 					"color": "#FDE1FF",
 					"name": "Cta 100",
 					"slug": "cta-100"
@@ -140,6 +185,46 @@
 					"color": "#121809",
 					"name": "Accent 900",
 					"slug": "accent-900"
+				},
+				{
+					"color": "#0D66D0",
+					"name": "Information Foreground",
+					"slug": "information-foreground"
+				},
+				{
+					"color": "#138027",
+					"name": "Success Foreground",
+					"slug": "success-foreground"
+				},
+				{
+					"color": "#CB6F0F",
+					"name": "Warning Foreground",
+					"slug": "warning-foreground"
+				},
+				{
+					"color": "#CB6F0F1a",
+					"name": "Warning Background",
+					"slug": "warning-background"
+				},
+				{
+					"color": "#C9242D",
+					"name": "Error Foreground",
+					"slug": "error-foreground"
+				},
+				{
+					"color": "#C9242D1a",
+					"name": "Error Background",
+					"slug": "error-background"
+				},
+				{
+					"color": "#1380271a",
+					"name": "Success Background",
+					"slug": "success-background"
+				},
+				{
+					"color": "#0D66D01a",
+					"name": "Information Background",
+					"slug": "information-background"
 				}
 			]
 		},

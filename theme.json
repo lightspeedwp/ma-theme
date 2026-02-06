@@ -596,7 +596,7 @@
 				{
 					"name": "Large",
 					"slug": "500",
-					"shadow": "1px 4px 12px 4px rgba(17, 17, 17, 0.3)"
+					"shadow": "2px 4px 12px 5px rgba(17, 17, 17, 0.3)"
 				},
 				{
 					"name": "X-Large",
