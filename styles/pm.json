@@ -7,6 +7,16 @@
 		"color": {
 			"palette": [
 				{
+					"color": "#FFFFFF",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#111111",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
 					"color": "#F9F9FA",
 					"name": "Neutral 100",
 					"slug": "neutral-100"
