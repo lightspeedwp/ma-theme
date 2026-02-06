@@ -27,8 +27,8 @@ $secondary_button = esc_html__( 'Learn More', 'ma-theme' );
 			<h1 class="wp-block-heading has-text-align-center has-huge-font-size" style="font-weight:700"><?php echo esc_html( $hero_title ); ?></h1>
 			<!-- /wp:heading -->
 
-			<!-- wp:paragraph {"align":"center","fontSize":"large","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|40"}}}} -->
-			<p class="has-text-align-center has-large-font-size" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--40)"><?php echo esc_html( $hero_description ); ?></p>
+			<!-- wp:paragraph {"align":"center","fontSize":"500","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|40"}}}} -->
+			<p class="has-text-align-center has-500-font-size" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--40)"><?php echo esc_html( $hero_description ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->

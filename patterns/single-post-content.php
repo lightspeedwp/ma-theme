@@ -17,15 +17,15 @@
 <article class="wp-block-group">
 	<!-- wp:post-title {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}}} /-->
 
-	<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|15"}},"fontSize":"small"} -->
-	<div class="wp-block-group has-small-font-size" aria-label="<?php esc_attr_e( 'Post metadata', 'ma-theme' ); ?>">
+	<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|5"}},"fontSize":"300"} -->
+	<div class="wp-block-group has-300-font-size" aria-label="<?php esc_attr_e( 'Post metadata', 'ma-theme' ); ?>">
 		<!-- wp:post-date /-->
-		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size" aria-hidden="true">·</p>
+		<!-- wp:paragraph {"fontSize":"300"} -->
+		<p class="has-300-font-size" aria-hidden="true">·</p>
 		<!-- /wp:paragraph -->
 		<!-- wp:post-author {"showAvatar":false,"isLink":true} /-->
-		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size" aria-hidden="true">·</p>
+		<!-- wp:paragraph {"fontSize":"300"} -->
+		<p class="has-300-font-size" aria-hidden="true">·</p>
 		<!-- /wp:paragraph -->
 		<!-- wp:post-terms {"term":"category"} /-->
 	</div>
@@ -35,8 +35,8 @@
 
 	<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
 
-	<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"},"padding":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"wrap"},"fontSize":"small"} -->
-	<div class="wp-block-group has-small-font-size" style="margin-top:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--30)" aria-label="<?php esc_attr_e( 'Post tags', 'ma-theme' ); ?>">
+	<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"},"padding":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"wrap"},"fontSize":"300"} -->
+	<div class="wp-block-group has-300-font-size" style="margin-top:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--30)" aria-label="<?php esc_attr_e( 'Post tags', 'ma-theme' ); ?>">
 		<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}}} -->
 		<p style="font-weight:600"><?php esc_html_e( 'Tags:', 'ma-theme' ); ?></p>
 		<!-- /wp:paragraph -->
