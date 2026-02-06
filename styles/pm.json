@@ -192,9 +192,19 @@
 					"slug": "information-foreground"
 				},
 				{
+					"color": "#0D66D01A",
+					"name": "Information Background",
+					"slug": "information-background"
+				},
+				{
 					"color": "#138027",
 					"name": "Success Foreground",
 					"slug": "success-foreground"
+				},
+				{
+					"color": "#1380271A",
+					"name": "Success Background",
+					"slug": "success-background"
 				},
 				{
 					"color": "#CB6F0F",
@@ -202,7 +212,7 @@
 					"slug": "warning-foreground"
 				},
 				{
-					"color": "#CB6F0F1a",
+					"color": "#CB6F0F1A",
 					"name": "Warning Background",
 					"slug": "warning-background"
 				},
@@ -212,19 +222,19 @@
 					"slug": "error-foreground"
 				},
 				{
-					"color": "#C9242D1a",
+					"color": "#C9242D1A",
 					"name": "Error Background",
 					"slug": "error-background"
 				},
 				{
-					"color": "#1380271a",
-					"name": "Success Background",
-					"slug": "success-background"
+					"color": "#FFFFFF",
+					"name": "Focus Foreground",
+					"slug": "focus-foreground"
 				},
 				{
-					"color": "#0D66D01a",
-					"name": "Information Background",
-					"slug": "information-background"
+					"color": "#447595",
+					"name": "Focus Background",
+					"slug": "focus-background"
 				}
 			]
 		},

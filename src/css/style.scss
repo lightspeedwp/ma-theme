@@ -7,15 +7,6 @@
 @import "../../node_modules/@wordpress/block-library/build-style/theme.css";
 
 /* Custom theme styles */
-:root {
-
-	/* Custom properties for spacing */
-	--theme-spacing-xs: var(--wp--preset--spacing--10);
-	--theme-spacing-sm: var(--wp--preset--spacing--20);
-	--theme-spacing-md: var(--wp--preset--spacing--40);
-	--theme-spacing-lg: var(--wp--preset--spacing--60);
-	--theme-spacing-xl: var(--wp--preset--spacing--80);
-}
 
 /* Body and typography */
 body {
@@ -72,7 +63,7 @@ body {
 
 			&:hover {
 				background: currentcolor;
-				color: var(--wp--preset--color--error-background);
+				color: var(--wp--preset--color--focus-foreground);
 			}
 		}
 	}
@@ -180,8 +171,8 @@ body {
 		top: 7px;
 		z-index: 999999;
 		padding: 8px 16px;
-		background: var(--wp--preset--color--error-background);
-		color: var(--wp--preset--color--error-foreground);
+		background: var(--wp--preset--color--focus-background);
+		color: var(--wp--preset--color--focus-foreground);
 		text-decoration: none;
 		border-radius: 3px;
 		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);

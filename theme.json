@@ -237,6 +237,16 @@
 					"color": "#0D66D01a",
 					"name": "Information Background",
 					"slug": "information-background"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "Focus Foreground",
+					"slug": "focus-foreground"
+				},
+				{
+					"color": "#00B2D5",
+					"name": "Focus Background",
+					"slug": "focus-background"
 				}
 			]
 		},
