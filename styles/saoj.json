@@ -1,0 +1,298 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"title": "SA Ophthalmology Journal",
+	"slug": "saoj",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#FFFFFF",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#111111",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#F9F9FA",
+					"name": "Neutral 100",
+					"slug": "neutral-100"
+				},
+				{
+					"color": "#E3E3EA",
+					"name": "Neutral 200",
+					"slug": "neutral-200"
+				},
+				{
+					"color": "#CCCCD5",
+					"name": "Neutral 300",
+					"slug": "neutral-300"
+				},
+				{
+					"color": "#B7B7BE",
+					"name": "Neutral 400",
+					"slug": "neutral-400"
+				},
+				{
+					"color": "#A4A4A5",
+					"name": "Neutral 500",
+					"slug": "neutral-500"
+				},
+				{
+					"color": "#878788",
+					"name": "Neutral 600",
+					"slug": "neutral-600"
+				},
+				{
+					"color": "#6B6B6C",
+					"name": "Neutral 700",
+					"slug": "neutral-700"
+				},
+				{
+					"color": "#4F4F4F",
+					"name": "Neutral 800",
+					"slug": "neutral-800"
+				},
+				{
+					"color": "#323232",
+					"name": "Neutral 900",
+					"slug": "neutral-900"
+				},
+				{
+					"color": "#FFFAFB",
+					"name": "Cta 100",
+					"slug": "cta-100"
+				},
+				{
+					"color": "#FEC9D3",
+					"name": "Cta 200",
+					"slug": "cta-200"
+				},
+				{
+					"color": "#FB99AD",
+					"name": "Cta 300",
+					"slug": "cta-300"
+				},
+				{
+					"color": "#F66C88",
+					"name": "Cta 400",
+					"slug": "cta-400"
+				},
+				{
+					"color": "#EF4065",
+					"name": "Cta 500",
+					"slug": "cta-500"
+				},
+				{
+					"color": "#DF173F",
+					"name": "Cta 600",
+					"slug": "cta-600"
+				},
+				{
+					"color": "#A81430",
+					"name": "Cta 700",
+					"slug": "cta-700"
+				},
+				{
+					"color": "#731022",
+					"name": "Cta 800",
+					"slug": "cta-800"
+				},
+				{
+					"color": "#400A13",
+					"name": "Cta 900",
+					"slug": "cta-900"
+				},
+				{
+					"color": "#BFDFF6",
+					"name": "Brand 100",
+					"slug": "brand-100"
+				},
+				{
+					"color": "#76AED6",
+					"name": "Brand 200",
+					"slug": "brand-200"
+				},
+				{
+					"color": "#4D94C6",
+					"name": "Brand 300",
+					"slug": "brand-300"
+				},
+				{
+					"color": "#3876A2",
+					"name": "Brand 400",
+					"slug": "brand-400"
+				},
+				{
+					"color": "#2B5775",
+					"name": "Brand 500",
+					"slug": "brand-500"
+				},
+				{
+					"color": "#254655",
+					"name": "Brand 600",
+					"slug": "brand-600"
+				},
+				{
+					"color": "#1C3137",
+					"name": "Brand 700",
+					"slug": "brand-700"
+				},
+				{
+					"color": "#101B1C",
+					"name": "Brand 800",
+					"slug": "brand-800"
+				},
+				{
+					"color": "#020303",
+					"name": "Brand 900",
+					"slug": "brand-900"
+				},
+				{
+					"color": "#FBFEFE",
+					"name": "Accent 100",
+					"slug": "accent-100"
+				},
+				{
+					"color": "#D3F3F2",
+					"name": "Accent 200",
+					"slug": "accent-200"
+				},
+				{
+					"color": "#ADE6E4",
+					"name": "Accent 300",
+					"slug": "accent-300"
+				},
+				{
+					"color": "#89D7D2",
+					"name": "Accent 400",
+					"slug": "accent-400"
+				},
+				{
+					"color": "#66C6BF",
+					"name": "Accent 500",
+					"slug": "accent-500"
+				},
+				{
+					"color": "#45AEA7",
+					"name": "Accent 600",
+					"slug": "accent-600"
+				},
+				{
+					"color": "#37827E",
+					"name": "Accent 700",
+					"slug": "accent-700"
+				},
+				{
+					"color": "#285856",
+					"name": "Accent 800",
+					"slug": "accent-800"
+				},
+				{
+					"color": "#17302F",
+					"name": "Accent 900",
+					"slug": "accent-900"
+				},
+				{
+					"color": "#0D66D0",
+					"name": "Information Foreground",
+					"slug": "information-foreground"
+				},
+				{
+					"color": "#0D66D01A",
+					"name": "Information Background",
+					"slug": "information-background"
+				},
+				{
+					"color": "#138027",
+					"name": "Success Foreground",
+					"slug": "success-foreground"
+				},
+				{
+					"color": "#1380271A",
+					"name": "Success Background",
+					"slug": "success-background"
+				},
+				{
+					"color": "#CB6F0F",
+					"name": "Warning Foreground",
+					"slug": "warning-foreground"
+				},
+				{
+					"color": "#CB6F0F1A",
+					"name": "Warning Background",
+					"slug": "warning-background"
+				},
+				{
+					"color": "#C9242D",
+					"name": "Error Foreground",
+					"slug": "error-foreground"
+				},
+				{
+					"color": "#C9242D1A",
+					"name": "Error Background",
+					"slug": "error-background"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "Focus Foreground",
+					"slug": "focus-foreground"
+				},
+				{
+					"color": "#2B5775",
+					"name": "Focus Background",
+					"slug": "focus-background"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "Roboto Slab",
+					"slug": "heading",
+					"fontFamily": "Roboto Slab, serif",
+					"fontFace": [
+						{
+							"src": [
+								"file:./assets/fonts/roboto-slab/RobotoSlab-VariableFont_wght.woff2"
+							],
+							"fontWeight": "100 900",
+							"fontStyle": "normal",
+							"fontFamily": "Roboto Slab"
+						}
+					]
+				},
+				{
+					"name": "Roboto",
+					"slug": "body",
+					"fontFamily": "Roboto, sans-serif",
+					"fontFace": [
+						{
+							"src": [
+								"file:./assets/fonts/roboto/Roboto-VariableFont_wght.woff2"
+							],
+							"fontWeight": "100 900",
+							"fontStyle": "normal",
+							"fontFamily": "Roboto"
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|body"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|heading"
+				}
+			}
+		}
+	}
+}

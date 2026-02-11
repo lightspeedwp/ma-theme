@@ -86,12 +86,12 @@ function ma_theme_enqueue_editor_assets() {
 	$editor_asset_file = get_theme_file_path( 'build/css/editor-style.asset.php' );
 	if ( file_exists( $editor_asset_file ) ) {
 		$editor_asset = include $editor_asset_file;
-		       wp_enqueue_style(
-				   'ma-theme-editor-style',
-			       get_theme_file_uri( 'build/css/editor-style.css' ),
-			       $editor_asset['dependencies'] ?? array(),
-				   $editor_asset['version'] ?? MA_THEME_VERSION
-		       );
+	       wp_enqueue_style(
+			   'ma-theme-editor-style',
+	       	   get_theme_file_uri( 'build/css/editor-style.css' ),
+	       	   array_merge( array( 'wp-block-editor' ), $editor_asset['dependencies'] ?? array() ),
+			   $editor_asset['version'] ?? MA_THEME_VERSION
+	       );
 	}
 
 	// Enqueue editor JavaScript.

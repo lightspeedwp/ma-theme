@@ -27,8 +27,8 @@
 .block-editor-block-inspector {
 
 	.components-panel__header {
-		background: var(--wp--preset--color--background);
-		border-bottom: 1px solid var(--wp--preset--color--neutral);
+		background: var(--wp--preset--color--error-background);
+		border-bottom: 1px solid var(--wp--preset--color--neutral-900);
 	}
 }
 
@@ -36,7 +36,7 @@
 .wp-block-template-part {
 
 	&.is-selected {
-		outline: 2px solid var(--wp--preset--color--primary);
+		outline: 2px solid var(--wp--preset--color--information-foreground);
 		outline-offset: 2px;
 	}
 }
