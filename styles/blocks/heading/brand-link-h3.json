@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "title": "Brand Link H3",
+  "slug": "brand-link-h3",
+  "blockTypes": [
+    "core/heading"
+  ],
+  "description": "H3 heading styled as a Brand link. Default text is contrast, hover and active states change to Brand cyan.",
+  "styles": {
+    "color": {
+      "text": "var:preset|color|contrast"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|heading",
+      "fontSize": "var:preset|font-size|500",
+      "fontWeight": "600",
+      "lineHeight": "1.25"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var:preset|color|contrast"
+        },
+        "typography": {
+          "textDecoration": "none"
+        }
+      }
+    },
+    "css": "&{transition: color 200ms ease;} & a{transition: color 200ms ease;} & a:hover{color: var(--wp--preset--color--brand-500); text-decoration: none;} & a:active{color: var(--wp--preset--color--brand-500); text-decoration: none;} & a:focus-visible{color: var(--wp--preset--color--brand-500); outline: 2px solid var(--wp--preset--color--focus-background); outline-offset: 2px;}"
+  }
+}

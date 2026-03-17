@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "title": "CTA Outline Small",
+  "slug": "cta-outline-small",
+  "blockTypes": [
+    "core/button"
+  ],
+  "description": "Use for compact secondary CTA actions supporting the primary action.",
+  "styles": {
+        "color": {
+          "background": "var:preset|color|base",
+          "text": "var:preset|color|cta-500"
+        },
+        "border": {
+          "radius": "var(--wp--preset--border-radius--200)",
+          "width": "1px",
+          "style": "solid",
+          "color": "var:preset|color|cta-500"
+        },
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|10",
+            "bottom": "var:preset|spacing|10",
+            "left": "var:preset|spacing|30",
+            "right": "var:preset|spacing|30"
+          }
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "fontSize": "var:preset|font-size|300",
+          "fontWeight": "700",
+          "lineHeight": "1.35",
+          "letterSpacing": "0.04em"
+        },
+        "css": "&{transition: background-color 200ms ease, border-color 200ms ease, color 180ms ease;} &:hover{background-color: var(--wp--preset--color--cta-500); color: var(--wp--preset--color--base); border-color: var(--wp--preset--color--cta-500);} &:active{background-color: var(--wp--preset--color--cta-500); color: var(--wp--preset--color--base); border-color: var(--wp--preset--color--cta-500);}"
+
+  }
+}

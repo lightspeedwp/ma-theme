@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "title": "Badge Brand Outline",
+  "slug": "badge-brand-outline",
+  "blockTypes": [
+    "core/paragraph"
+  ],
+  "description": "Small outline Brand badge. Brand teal border and text on white, fills solid on hover.",
+  "styles": {
+    "color": {
+      "background": "var:preset|color|base",
+      "text": "var:preset|color|brand-500"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "fontSize": "var:preset|font-size|100",
+      "fontWeight": "700",
+      "lineHeight": "1.5",
+      "letterSpacing": "0.05em"
+    },
+    "border": {
+      "radius": "var(--wp--preset--border-radius--100)",
+      "width": "1px",
+      "style": "solid",
+      "color": "var:preset|color|brand-500"
+    },
+    "spacing": {
+      "padding": {
+        "top": "var:preset|spacing|5",
+        "bottom": "var:preset|spacing|5",
+        "left": "var:preset|spacing|10",
+        "right": "var:preset|spacing|10"
+      }
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var:preset|color|brand-500"
+        },
+        "typography": {
+          "textDecoration": "none"
+        }
+      }
+    },
+    "css": "&{transition: background-color 200ms ease, border-color 200ms ease, color 180ms ease; display: inline-block;} &:hover{background-color: var(--wp--preset--color--brand-500); color: var(--wp--preset--color--base); border-color: var(--wp--preset--color--brand-500);} & a{transition: color 200ms ease;} & a:hover{color: var(--wp--preset--color--base); text-decoration: none;} & a:active{color: var(--wp--preset--color--base); text-decoration: none;} & a:focus-visible{outline: 2px solid var(--wp--preset--color--focus-background); outline-offset: 2px;}"
+  }
+}

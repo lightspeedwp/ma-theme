@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "title": "Accent Outline Medium",
+  "slug": "accent-outline-medium",
+  "blockTypes": [
+    "core/button"
+  ],
+  "description": "Use for medium-size light-touch accent actions where outline emphasis is preferred.",
+  "styles": {
+    "color": {
+      "background": "var:preset|color|base",
+      "text": "var:preset|color|contrast"
+    },
+    "border": {
+      "radius": "var(--wp--preset--border-radius--200)",
+      "width": "1px",
+      "style": "solid",
+      "color": "var:preset|color|accent-500"
+    },
+    "spacing": {
+      "padding": {
+        "top": "var:preset|spacing|10",
+        "bottom": "var:preset|spacing|10",
+        "left": "var:preset|spacing|40",
+        "right": "var:preset|spacing|40"
+      }
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "fontSize": "var:preset|font-size|400",
+      "fontWeight": "700",
+      "lineHeight": "1.35",
+      "letterSpacing": "0.05em"
+    },
+    "css": "&{transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;} &:hover{background-color: var(--wp--preset--color--accent-500); color: var(--wp--preset--color--base); border-color: var(--wp--preset--color--accent-500);} &:focus-visible{outline: 2px solid var(--wp--preset--color--focus-background); outline-offset: 2px;} &:active{background-color: var(--wp--preset--color--accent-500); color: var(--wp--preset--color--base); border-color: var(--wp--preset--color--accent-500);}"
+  }
+}

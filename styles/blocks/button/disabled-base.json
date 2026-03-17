@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "title": "Disabled Base",
+  "slug": "disabled-base",
+  "blockTypes": [
+    "core/button"
+  ],
+  "description": "Use for unavailable actions with a non-interactive visual treatment.",
+  "styles": {
+        "color": {
+          "background": "var:preset|color|neutral-200",
+          "text": "var:preset|color|neutral-600"
+        },
+        "border": {
+          "radius": "var(--wp--preset--border-radius--200)",
+          "width": "1px",
+          "style": "solid",
+          "color": "var:preset|color|neutral-600"
+        },
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|5",
+            "bottom": "var:preset|spacing|5",
+            "left": "var:preset|spacing|10",
+            "right": "var:preset|spacing|10"
+          }
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "fontSize": "var:preset|font-size|200",
+          "fontWeight": "700",
+          "lineHeight": "1.35",
+          "letterSpacing": "0.03em"
+        },
+        "css": "&{cursor:default;transition: background-color 200ms ease, border-color 200ms ease, color 180ms ease;} &:hover{background-color: var(--wp--preset--color--neutral-200); color: var(--wp--preset--color--neutral-600); border-color: var(--wp--preset--color--neutral-600);} &:active{background-color: var(--wp--preset--color--neutral-200); color: var(--wp--preset--color--neutral-600); border-color: var(--wp--preset--color--neutral-600);}"
+
+  }
+}

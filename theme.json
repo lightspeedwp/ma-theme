@@ -250,6 +250,15 @@
 				}
 			]
 		},
+		"dimensions": {
+			"aspectRatios": [
+				{
+					"name": "Card Image",
+					"slug": "card-image",
+					"ratio": "2/1"
+				}
+			]
+		},
 		"layout": {
 			"contentSize": "768px",
 			"wideSize": "1280px"

@@ -2,41 +2,52 @@
 /**
  * Title: Post Card
  * Slug: ma-theme/post-card
- * Description: A single post card with featured image, title, excerpt, and metadata.
- * Categories: posts
+ * Description: Post card with featured image, badge overlay, category, title, date with journal logo, excerpt, and brand outline button.
+ * Categories: 
  * Keywords: post, card, article, blog
- * Inserter: no
+ * Block Types: 
  * Viewport Width: 400
+ * Inserter: true
  *
  * @package Medical Academic
  * @since 1.0.0
  */
 
-$read_more_label = esc_html__( 'Continue reading', 'ma-theme' );
+$badge_label  = esc_html__( 'tag', 'ma-theme' );
+$button_label = esc_html__( 'Read more', 'ma-theme' );
+$logo_url     = get_template_directory_uri() . '/assets/logos/journal-placeholder.svg';
+$logo_alt     = esc_attr__( 'Journal logo', 'ma-theme' );
 ?>
-<!-- wp:group {"tagName":"article","style":{"spacing":{"blockGap":"var:preset|spacing|20"},"border":{"radius":"8px","width":"1px"}},"borderColor":"neutral-900","layout":{"type":"constrained"}} -->
-<article class="wp-block-group has-border-color has-neutral-900-border-color" style="border-width:1px;border-radius:8px">
-	<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","style":{"border":{"radius":{"topLeft":"8px","topRight":"8px"}}}} /-->
+<!-- wp:group {"tagName":"article","metadata":{"name":"Post Card"},"className":"is-style-card-base","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<article class="wp-block-group is-style-card-base"><!-- wp:cover {"useFeaturedImage":true,"dimRatio":0,"customOverlayColor":"#FFF","isUserOverlayColor":false,"contentPosition":"top left","isDark":false,"style":{"dimensions":{"aspectRatio":"2/1"},"spacing":{"padding":{"top":"var:preset|spacing|10","right":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10"}}}} -->
+<div class="wp-block-cover is-light has-custom-content-position is-position-top-left" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#FFF"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"className":"is-style-badge-brand-outline"} -->
+<p class="is-style-badge-brand-outline"><?php echo esc_html( $badge_label ); ?></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
 
-	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|5"}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-		<!-- wp:post-terms {"term":"category","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"200"} /-->
+<!-- wp:group {"metadata":{"name":"Card Content"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:post-terms {"term":"category"} /-->
 
-		<!-- wp:post-title {"isLink":true,"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"top":"var:preset|spacing|10"}}},"fontSize":"400"} /-->
+<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"300"} /-->
 
-		<!-- wp:post-excerpt {"moreText":"<?php echo esc_attr( $read_more_label ); ?>","excerptLength":20} /-->
+<!-- wp:group {"metadata":{"name":"Date and Journal"},"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group"><!-- wp:post-date {"fontSize":"200"} /-->
 
-		<!-- wp:separator {"className":"is-style-wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}}} -->
-		<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)" aria-hidden="true"/>
-		<!-- /wp:separator -->
+<!-- wp:image {"width":"120px","height":"24px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( $logo_url ); ?>" alt="<?php echo esc_attr( $logo_alt ); ?>" style="width:120px;height:24px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
 
-		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"},"fontSize":"300"} -->
-		<div class="wp-block-group has-300-font-size" aria-label="<?php esc_attr_e( 'Post metadata', 'ma-theme' ); ?>">
-			<!-- wp:post-date /-->
-			<!-- wp:post-author {"showAvatar":false,"showBio":false,"isLink":true} /-->
-		</div>
-		<!-- /wp:group -->
-	</div>
-	<!-- /wp:group -->
-</article>
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:post-excerpt {"moreText":"","showMoreOnNewLine":false,"excerptLength":20,"fontSize":"200"} /-->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"width":100,"className":"is-style-brand-outline-small"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-brand-outline-small"><a class="wp-block-button__link wp-element-button"><?php echo esc_html( $button_label ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></article>
 <!-- /wp:group -->

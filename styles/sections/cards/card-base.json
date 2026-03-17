@@ -1,0 +1,110 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"title": "Card Base",
+	"slug": "card-base",
+	"blockTypes": [
+		"core/group"
+	],
+	"description": "Reusable card shell with white background, light border, rounded corners, and base shadow. Apply to the outermost card group.",
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"border": {
+			"radius": "var(--wp--preset--border-radius--200)",
+			"width": "1px",
+			"style": "solid",
+			"color": "var:preset|color|neutral-200"
+		},
+		"shadow": "var:preset|shadow|200",
+		"spacing": {
+			"blockGap": "none"
+		},
+		"css": "&{overflow:hidden;transition:box-shadow 0.2s ease,transform 0.2s ease;}&:hover{box-shadow:var(--wp--preset--shadow--300);}",
+		"blocks": {
+			"core/post-title": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|heading",
+					"fontWeight": "600",
+					"lineHeight": "1.25"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|contrast"
+						},
+						":hover": {
+							"color": {
+								"text": "var:preset|color|cta-500"
+							}
+						}
+					}
+				}
+			},
+			"core/post-terms": {
+				"color": {
+					"text": "var:preset|color|cta-700"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"fontWeight": "700",
+					"textTransform": "uppercase",
+					"letterSpacing": "0.03em"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|cta-700"
+						},
+                        "textDecoration": "none",
+						":hover": {
+							"color": {
+								"text": "var:preset|color|cta-500"
+							},
+                            "textDecoration": "underline"
+						}
+					}
+				}
+			},
+			"core/post-excerpt": {
+				"color": {
+					"text": "var:preset|color|neutral-700"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"lineHeight": "1.5"
+				}
+			},
+			"core/post-date": {
+				"color": {
+					"text": "var:preset|color|neutral-700"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|body"
+				}
+			},
+			"core/post-author-name": {
+				"color": {
+					"text": "var:preset|color|neutral-700"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|neutral-700"
+						}
+					}
+				}
+			},
+			"core/separator": {
+				"color": {
+					"text": "var:preset|color|neutral-200"
+				}
+			}
+		}
+	}
+}

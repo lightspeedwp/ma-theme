@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "title": "CTA Link Category Tiny",
+  "slug": "cta-link-category-tiny",
+  "blockTypes": [
+    "core/paragraph"
+  ],
+  "description": "Tiny-size uppercase category link with CTA colour default. Hover and active states change to CTA orange.",
+  "styles": {
+    "color": {
+      "text": "var:preset|color|cta-700"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "fontSize": "var:preset|font-size|100",
+      "fontWeight": "700",
+      "lineHeight": "1",
+      "letterSpacing": "0.03em",
+      "textTransform": "uppercase"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var:preset|color|cta-700"
+        },
+        "typography": {
+          "textDecoration": "none"
+        }
+      }
+    },
+    "css": "&{transition: color 200ms ease;} & a{transition: color 200ms ease;} & a:hover{color: var(--wp--preset--color--cta-500); text-decoration: underline;} & a:active{color: var(--wp--preset--color--cta-500); text-decoration: underline;} & a:focus-visible{color: var(--wp--preset--color--cta-500); outline: 2px solid var(--wp--preset--color--focus-background); outline-offset: 2px;}"
+  }
+}
