@@ -6,20 +6,16 @@
   "blockTypes": [
     "core/group"
   ],
-  "description": "Magazine card shell with white background, rounded corners, no border. Image scales up on hover and card gains a subtle shadow.",
+  "description": "Magazine card shell with white background, no border. Image has rounded corners, shadow, and scales up on hover.",
   "styles": {
     "color": {
       "background": "var:preset|color|base",
       "text": "var:preset|color|contrast"
     },
-    "border": {
-      "radius": "var(--wp--preset--border-radius--200)"
-    },
-    "shadow": "var:preset|shadow|200",
     "spacing": {
       "blockGap": "none"
     },
-    "css": "&{overflow:hidden;transition:box-shadow 0.2s ease;} &:hover{box-shadow:var(--wp--preset--shadow--300);} & .wp-block-post-featured-image{overflow:hidden;border-radius:var(--wp--preset--border-radius--200) var(--wp--preset--border-radius--200) 0 0;} & .wp-block-post-featured-image img{transition:transform 0.3s ease;} &:hover .wp-block-post-featured-image img{transform:scale(1.05);}",
+    "css": "& .wp-block-post-featured-image{overflow:hidden;border-radius:var(--wp--preset--border-radius--200);box-shadow:var(--wp--preset--shadow--200);transition:box-shadow 0.3s ease;} & .wp-block-post-featured-image img{transition:transform 0.3s ease;} & .wp-block-post-featured-image:hover{box-shadow:var(--wp--preset--shadow--300);} & .wp-block-post-featured-image:hover img{transform:scale(1.025);}",
     "blocks": {
       "core/post-title": {
         "color": {
@@ -58,11 +54,6 @@
         },
         "typography": {
           "fontFamily": "var:preset|font-family|body"
-        }
-      },
-      "core/separator": {
-        "color": {
-          "text": "var:preset|color|neutral-200"
         }
       }
     }
