@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "title": "Section Header",
+  "slug": "section-header",
+  "blockTypes": [
+    "core/group"
+  ],
+  "description": "Section header with bottom border divider. Heading resized to font-size-500 in heading font at weight 700.",
+  "styles": {
+    "border": {
+      "bottom": {
+        "width": "1px",
+        "style": "solid",
+        "color": "var:preset|color|neutral-300"
+      }
+    },
+    "spacing": {
+      "padding": {
+        "bottom": "var:preset|spacing|20"
+      }
+    },
+    "blocks": {
+      "core/heading": {
+        "color": {
+          "text": "var:preset|color|contrast"
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontSize": "var:preset|font-size|500",
+          "fontWeight": "700",
+          "lineHeight": "1.25"
+        }
+      }
+    }
+  }
+}

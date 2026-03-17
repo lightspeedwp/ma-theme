@@ -160,6 +160,23 @@ Do not create any files until the user approves.
 4. Follow block syntax from `references/block-markup.md` exactly
 5. Reference tokens from `references/token-registry.md` — never hardcode values
 
+### Phase 5 — Clean up Figma-imported assets
+
+The `mcp_figma_dev-mod_get_design_context` tool writes hash-named image and SVG files (e.g. `029ae3b1a24fe…png`) into the `dirForAssetWrites` directory. These are **not used** in WordPress patterns — patterns reference dynamic post data or theme-bundled assets, never Figma export hashes.
+
+After implementation is complete, **always** delete these artifacts:
+
+```bash
+# Remove all hash-named Figma exports from assets/
+cd assets/ && ls | grep -E '^[0-9a-f]{20,}\.(png|svg)$' | xargs rm -f
+```
+
+**Rules:**
+
+- Only delete files whose names are 20+ hex characters followed by `.png` or `.svg` — these are Figma MCP artifacts.
+- Never delete subdirectories (`fonts/`, `logos/`, etc.) or human-named files.
+- Run this cleanup in every workflow invocation, even if the pattern doesn't reference images.
+
 ---
 
 ## Critical Rules

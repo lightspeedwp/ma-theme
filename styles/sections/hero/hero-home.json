@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"title": "Hero Home",
+	"slug": "hero-home",
+	"blockTypes": [
+		"core/group"
+	],
+	"description": "Home page hero section with white background. Even-positioned hero cards stagger narrower and right-aligned to create a cascading effect.",
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"spacing": {
+			"margin": {
+				"top": "0",
+				"bottom": "0"
+			}
+		},
+		"css": "& .is-style-card-hero:nth-child(even){max-width:87%;margin-left:auto;}"
+	}
+}

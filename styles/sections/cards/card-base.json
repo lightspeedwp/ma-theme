@@ -22,7 +22,7 @@
 		"spacing": {
 			"blockGap": "none"
 		},
-		"css": "&{overflow:hidden;transition:box-shadow 0.2s ease,transform 0.2s ease;}&:hover{box-shadow:var(--wp--preset--shadow--300);}",
+		"css": "&{overflow:hidden;transition:box-shadow 0.2s ease,transform 0.2s ease;} &:hover{box-shadow:var(--wp--preset--shadow--300);} & .wp-block-cover{overflow:hidden;} & .wp-block-cover img.wp-block-cover__image-background{transition:transform 0.3s ease;} & .wp-block-cover:hover img.wp-block-cover__image-background{transform:scale(1.05);} & .wp-block-post-featured-image{overflow:hidden;} & .wp-block-post-featured-image img{transition:transform 0.3s ease;} & .wp-block-post-featured-image:hover img{transform:scale(1.05);}",
 		"blocks": {
 			"core/post-title": {
 				"color": {
