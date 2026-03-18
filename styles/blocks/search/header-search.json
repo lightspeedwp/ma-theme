@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"title": "Header Search",
+	"slug": "header-search",
+	"blockTypes": [
+		"core/search"
+	],
+	"description": "Header search with expandable dropdown panel. Search input has neutral-500 border, border-radius-200, and neutral-700 placeholder text. The toggle button triggers a full-width search bar below the header.",
+	"styles": {
+		"border": {
+			"radius": "var(--wp--preset--border-radius--200)",
+			"width": "1px",
+			"style": "solid",
+			"color": "var:preset|color|neutral-500"
+		},
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|300",
+			"lineHeight": "1.5"
+		},
+		"css": "& .wp-block-search__input{border: 1px solid var(--wp--preset--color--neutral-500); border-radius: var(--wp--preset--border-radius--200); padding: var(--wp--preset--spacing--10) var(--wp--preset--spacing--20); color: var(--wp--preset--color--contrast); background-color: var(--wp--preset--color--base); font-family: var(--wp--preset--font-family--body); font-size: var(--wp--preset--font-size--300); line-height: 1.5; height: 50px;} & .wp-block-search__input::placeholder{color: var(--wp--preset--color--neutral-700);} & .wp-block-search__button{background: none; border: none; color: var(--wp--preset--color--contrast); cursor: pointer; padding: 0;} & .wp-block-search__button:hover{color: var(--wp--preset--color--cta-500);} & .wp-block-search__button svg{width: 20px; height: 20px;}"
+	}
+}

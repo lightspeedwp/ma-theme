@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"title": "Stats Home",
+	"slug": "stats-home",
+	"blockTypes": [
+		"core/group"
+	],
+	"description": "Home page stats bar with brand-100 background. Child headings use brand-700 and child paragraphs use neutral-700.",
+	"styles": {
+		"color": {
+			"background": "var:preset|color|brand-100",
+			"text": "var:preset|color|contrast"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|60",
+				"bottom": "var:preset|spacing|60",
+				"left": "var:preset|spacing|20",
+				"right": "var:preset|spacing|20"
+			},
+			"margin": {
+				"top": "0",
+				"bottom": "0"
+			}
+		},
+		"blocks": {
+			"core/heading": {
+				"color": {
+					"text": "var:preset|color|brand-700"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|heading",
+					"fontSize": "var:preset|font-size|600",
+					"fontWeight": "700",
+					"lineHeight": "1.25"
+				}
+			},
+			"core/paragraph": {
+				"color": {
+					"text": "var:preset|color|neutral-700"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"fontSize": "var:preset|font-size|200",
+					"fontWeight": "400",
+					"lineHeight": "1.5"
+				}
+			}
+		}
+	}
+}

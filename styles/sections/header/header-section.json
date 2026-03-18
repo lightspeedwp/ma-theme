@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"title": "Header Section",
+	"slug": "header-section",
+	"blockTypes": [
+		"core/group"
+	],
+	"description": "Site header wrapper. White background, no vertical margins, sticky positioning support.",
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"spacing": {
+			"margin": {
+				"top": "0",
+				"bottom": "0"
+			}
+		}
+	}
+}

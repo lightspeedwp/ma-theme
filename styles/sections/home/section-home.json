@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"title": "Section Home",
+	"slug": "section-home",
+	"blockTypes": [
+		"core/group"
+	],
+	"description": "Reusable home page section shell with white background, full-width alignment, vertical padding, and consistent block gap. Apply to any home page content section.",
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|60",
+				"bottom": "var:preset|spacing|60",
+				"left": "var:preset|spacing|20",
+				"right": "var:preset|spacing|20"
+			},
+			"margin": {
+				"top": "0",
+				"bottom": "0"
+			},
+			"blockGap": "var:preset|spacing|40"
+		}
+	}
+}

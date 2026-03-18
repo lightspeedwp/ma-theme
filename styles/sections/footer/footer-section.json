@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"title": "Footer Section",
+	"slug": "footer-section",
+	"blockTypes": [
+		"core/group"
+	],
+	"description": "Dark footer section with contrast background, light text, and inherited heading/link styling for footer columns.",
+	"styles": {
+		"color": {
+			"background": "var:preset|color|contrast",
+			"text": "var:preset|color|neutral-300"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|60",
+				"bottom": "var:preset|spacing|40",
+				"left": "var:preset|spacing|20",
+				"right": "var:preset|spacing|20"
+			},
+			"margin": {
+				"top": "0",
+				"bottom": "0"
+			}
+		},
+		"blocks": {
+			"core/heading": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			},
+			"core/paragraph": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|neutral-200"
+						},
+						"typography": {
+							"textDecoration": "none"
+						},
+						":hover": {
+							"color": {
+								"text": "var:preset|color|cta-500"
+							}
+						}
+					}
+				}
+			},
+			"core/separator": {
+				"color": {
+					"background": "var:preset|color|neutral-900"
+				}
+			}
+		}
+	}
+}

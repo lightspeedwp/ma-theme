@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"title": "Header Nav",
+	"slug": "header-nav",
+	"blockTypes": [
+		"core/navigation"
+	],
+	"description": "Main header navigation links. Contrast text with semibold weight, hover and focus states change to CTA-500 orange.",
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|300",
+			"fontWeight": "600",
+			"lineHeight": "1.5",
+			"letterSpacing": "0.05em"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				},
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		},
+		"css": "& a{transition: color 200ms ease;} & a:hover{color: var(--wp--preset--color--cta-500); text-decoration: none;} & a:active{color: var(--wp--preset--color--cta-500); text-decoration: none;} & a:focus-visible{color: var(--wp--preset--color--cta-500); outline: 2px solid var(--wp--preset--color--focus-background); outline-offset: 2px;}"
+	}
+}
